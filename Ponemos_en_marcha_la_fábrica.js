@@ -11,9 +11,9 @@
 function manufacture(gifts, materials) {
     let index;
 
-    return gifts.filter((gift) => {// anidamiento 1
+    return gifts.filter((gift) => {                                             // anidamiento 1
         index = 0;
-        while (index < gift.length && materials.includes(gift[++index])){}  // 2 anidamiento. 1 "while" + 1 "&&" + 1 anidamiento: 3 puntos
+        while (index < gift.length && materials.includes(gift[++index])){}      // 2 anidamiento. 1 "while" + 1 "&&" + 1 anidamiento: 3 puntos
             return index === gift.length;
     });
 }
